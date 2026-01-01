@@ -1,5 +1,8 @@
 🚗 Parking Demand & Dynamic Pricing Model
+
+
 📌 Project Overview
+
 This project implements a full end-to-end Machine Learning pipeline to model parking demand and predict dynamic parking prices based on real-world factors such as occupancy, queue length, traffic conditions, time patterns, vehicle type, and special days.
 
 The system combines:
