@@ -7,125 +7,127 @@ This project implements a full end-to-end Machine Learning pipeline to model par
 
 The system combines:
 
-Explainable rule-based demand pricing (baseline)
+    Explainable rule-based demand pricing (baseline)
 
-Advanced ML regression models for accurate price prediction
+    Advanced ML regression models for accurate price prediction
 
-Strict data leakage prevention and time-based evaluation
+    Strict data leakage prevention and time-based evaluation
 
 🎯 Objective (Target Data Mining Task)
-To predict parking price (continuous value) at a given time and location using historical parking and contextual data.
 
-Why this matters:
-Helps optimize parking revenue
+    To predict parking price (continuous value) at a given time and location using historical parking and contextual data.
 
-Reduces congestion during peak hours
+    Why this matters:
+        Helps optimize parking revenue
 
-Enables fair and demand-aware pricing
+        Reduces congestion during peak hours
 
-Supports smart-city transportation planning
+        Enables fair and demand-aware pricing
+
+        Supports smart-city transportation planning
 
 🧠 Key Outcomes
-Built a robust ML pipeline covering the complete data science lifecycle
 
-Achieved high predictive accuracy using Gradient Boosting and Random Forest
+    Built a robust ML pipeline covering the complete data science lifecycle
 
-Ensured realistic evaluation using time-based train/validation/test splits
+    Achieved high predictive accuracy using Gradient Boosting and Random Forest
 
-Prevented target leakage by separating demand-construction logic from ML features
+    Ensured realistic evaluation using time-based train/validation/test splits
 
-Enabled manual prediction testing (interactive, CSV, and programmatic inputs)
+    Prevented target leakage by separating demand-construction logic from ML features
+
+    Enabled manual prediction testing (interactive, CSV, and programmatic inputs)
 
 Sample Test Performance (after leakage fixes):
-Model	RMSE	MAE	R²
-Gradient Boosting	~0.03–0.04	~0.02	~0.99
-Random Forest	~0.04–0.05	~0.03	~0.99
+    Model	RMSE	MAE	R²
+    Gradient Boosting	~0.03–0.04	~0.02	~0.99
+    Random Forest	~0.04–0.05	~0.03	~0.99
 
-⚠️ High accuracy is expected because prices are generated using structured demand logic; strict safeguards are applied to keep evaluation honest.
+
 
 🔧 Pipeline Components
-This project includes all major data mining and ML stages:
+
+    This project includes all major data mining and ML stages:
 
 Data Cleaning
 
-Missing value handling
+    Missing value handling
 
-Outlier treatment (IQR-based)
+    Outlier treatment (IQR-based)
 
-Timestamp standardization
+    Timestamp standardization
 
 Feature Engineering
 
-Lag features (time-series safe)
+    Lag features (time-series safe)
 
-Rolling statistics
+    Rolling statistics
 
-Interaction features
+    Interaction features
 
-Peak-hour indicators
+    Peak-hour indicators
 
 Exploratory Data Analysis
 
-Correlation analysis
+    Correlation analysis
 
-Distribution plots
+    Distribution plots
 
-Residual analysis
+    Residual analysis
 
-Hypothesis Testing
+    Hypothesis Testing
 
-T-test (Weekend vs Weekday pricing)
+    T-test (Weekend vs Weekday pricing)
 
-ANOVA (Day-of-week impact)
+    ANOVA (Day-of-week impact)
 
-Chi-square tests (categorical relationships)
+    Chi-square tests (categorical relationships)
 
 Feature Selection
 
-Univariate statistical selection
+    Univariate statistical selection
 
-Random Forest importance-based selection
+    Random Forest importance-based selection
 
-Dimensionality Reduction
+    Dimensionality Reduction
 
 PCA (for analysis and variance understanding)
 
-Proximity Measures
+    Proximity Measures
 
-Euclidean
+    Euclidean
 
-Cosine similarity
+    Cosine similarity
 
-Mahalanobis distance
+    Mahalanobis distance
 
 k-Nearest Neighbors (training-only)
 
-Modeling
+    Modeling
 
-Random Forest Regressor
+    Random Forest Regressor
 
-Gradient Boosting Regressor
+    Gradient Boosting Regressor
 
 Evaluation
 
-RMSE, MAE, R², MAPE, sMAPE
+    RMSE, MAE, R², MAPE, sMAPE
 
-Time-based validation
+    Time-based validation
 
-Inference & Manual Testing
+    Inference & Manual Testing
 
-Interactive input (Jupyter-friendly)
+    Interactive input (Jupyter-friendly)
 
 CSV-based batch prediction
 
-Python dictionary input
+    Python dictionary input
 
 📥 How to Test the Model (Jupyter Friendly)
-Option 1: Interactive Input
-Run the notebook/script and choose:
+    Option 1: Interactive Input
+    Run the notebook/script and choose:
 
-mathematica
-Copy code
+
 Manual testing options:
 1) Interactive prompt
 Enter values manually or press Enter to use defaults.
