@@ -119,62 +119,61 @@ Evaluation
 
     Interactive input (Jupyter-friendly)
 
-CSV-based batch prediction
 
-    Python dictionary input
 
-📥 How to Test the Model (Jupyter Friendly)
-    Option 1: Interactive Input
+  
+
+📥 How to Test the Model (Jupyter Friendly)\
+
+    Option 1: 
+    Interactive Input
     Run the notebook/script and choose:
 
 
-Manual testing options:
-1) Interactive prompt
-Enter values manually or press Enter to use defaults.
+    Manual testing options:
+    1) Interactive prompt
+    Enter values manually or press Enter to use defaults.
 
-Option 2: CSV Input
-Provide a CSV with feature columns:
+    Option 2: CSV Input
+    Provide a CSV with feature columns:
+    manual_predict(final_model, final_features, proximity_info, train_data, csv_path="sample_input.csv")
+    
+    Option 3: Python Dictionary
 
-python
-Copy code
-manual_predict(final_model, final_features, proximity_info, train_data, csv_path="sample_input.csv")
-Option 3: Python Dictionary
-python
-Copy code
-samples = [{
+    samples = [{
     "OccupancyRate_lag1": 0.75,
     "QueueNorm": 0.6,
     "TrafficLevel": 2,
     "IsWeekend": 0,
     "Hour": 18
-}]
-manual_predict(final_model, final_features, proximity_info, train_data, samples=samples)
+    }]
+    manual_predict(final_model, final_features, proximity_info, train_data, samples=samples)
+
+    
 📦 Libraries & Tools Used
-Core Libraries
-Python 3
 
-NumPy
+        Python 3
 
-Pandas
+        NumPy
 
-Visualization
-Matplotlib
+        Pandas
 
-Seaborn
+        Visualization(Matplotlib)
 
-Machine Learning
-scikit-learn
+        Seaborn
 
-RandomForestRegressor
+        Machine Learning(scikit-learn)
 
-GradientBoostingRegressor
+        RandomForestRegressor
 
-PCA
+        GradientBoostingRegressor
 
-SelectKBest
+        PCA
 
-NearestNeighbors
+        SelectKBest
 
-Statistics
-SciPy
+        NearestNeighbors
+
+        Statistics
+        SciPy
 
